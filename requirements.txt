@@ -1,0 +1,10 @@
+# ORM y Base de Datos
+SQLAlchemy>=2.0.0
+psycopg[binary]>=3.1.0
+
+# Cliente HTTP y Utilidades
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# Validación de Datos Modernas
+pydantic>=2.0.0
