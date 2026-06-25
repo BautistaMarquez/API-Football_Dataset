@@ -67,6 +67,10 @@ class EquipoTemporada(ModeloBase, AuditoriaMixin):
     estadisticas_descargadas: Mapped[bool] = mapped_column(Boolean, default=False)
     plantilla_descargada: Mapped[bool] = mapped_column(Boolean, default=False)
 
+    # Relaciones ORM
+    equipo: Mapped["Equipo"] = relationship("Equipo")
+    temporada: Mapped["Temporada"] = relationship("Temporada")
+
 # ==========================================
 # ESTADÍSTICAS MACRO (POR TEMPORADA)
 # ==========================================
